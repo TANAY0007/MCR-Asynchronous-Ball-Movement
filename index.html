@@ -7,7 +7,26 @@
 <script src="./p5.play.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="utf-8" />
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-database.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
 
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCx4PMNoBrzJab5nfro7qloLuPfp8F-s6o",
+    authDomain: "formula1-world-championship.firebaseapp.com",
+    databaseURL: "https://formula1-world-championship-default-rtdb.firebaseio.com",
+    projectId: "formula1-world-championship",
+    storageBucket: "formula1-world-championship.appspot.com",
+    messagingSenderId: "253789797986",
+    appId: "1:253789797986:web:7b3d9a5f73b6a3d62c1b3b"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
   </head>
   <body>
       <script src="sketch.js"></script>
